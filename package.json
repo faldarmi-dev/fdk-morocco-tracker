@@ -1,0 +1,14 @@
+{
+  "name": "riad-manager",
+  "version": "1.0.0",
+  "description": "Front-desk and operations app for Moroccan riads",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

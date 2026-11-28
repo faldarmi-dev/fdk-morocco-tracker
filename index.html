@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Riad Manager</title>
+  <meta name="description" content="Front-desk and operations app for Moroccan riads: rooms, bookings, calendar, guests, housekeeping and invoices.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <svg class="star" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 4l13 19 22-6-6 22 19 11-19 13 6 22-22-6-13 19-13-19-22 6 6-22L2 50l19-13-6-22 22 6z"/></svg>
+      <div>
+        <div class="brand-name" id="brand-name">Riad Manager</div>
+        <div class="brand-sub" id="brand-sub"></div>
+      </div>
+    </div>
+    <nav class="tabs" id="tabs" aria-label="Sections">
+      <button data-view="dashboard">Today</button>
+      <button data-view="calendar">Calendar</button>
+      <button data-view="bookings">Bookings</button>
+      <button data-view="rooms">Rooms</button>
+      <button data-view="guests">Guests</button>
+      <button data-view="settings">Settings</button>
+    </nav>
+    <button class="btn primary new-booking" data-action="new-booking">+ New booking</button>
+  </header>
+
+  <main id="view" tabindex="-1"></main>
+
+  <dialog id="modal">
+    <div id="modal-body"></div>
+  </dialog>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
